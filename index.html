@@ -9,28 +9,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <header id = "header">
+    <header id = "header" class = "sticky">
         <img src = "volcano.jpg" id = "header-img">
         <section class = "head-section">
             <h1>Travel Photos</h1>
             <p>Travel the world, take pictures</p>
         </section>
-        <nav id = "navbar" class="navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav id = "nav-bar" class="navbar-expand-lg navbar-light bg-light">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#" target = "_blank">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-item nav-link active" href="#header">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#main-text-area">Images</a>
+                <a class="nav-item nav-link" href="#video-area">Video</a>
+                <a class="nav-item nav-link" href="#form">Mailing List</a>
               </div>
             </div>
           </nav>
     </header>
-    <section class  = "main-text-area">
+    <section id  = "main-text-area">
         <h2>My Travel Photos</h2>
         <div id = "image-area">
             <img class = "travel-image" src = "laSegradaFamilia.jpg" alt = "la Segrada Familia Barcelona,Spain">
@@ -39,9 +37,18 @@
             <img class = "travel-image" src = "volcano.jpg" alt = "volocano in Antigua, Guetamala">
         </div>
     </section>
-    <section class = "video-area">
+    <section id = "video-area">
         <h3>Photography Tips</h3>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/iQY1JRyIaxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id = "video" width="853" height="480" src="https://www.youtube.com/embed/iQY1JRyIaxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+    <form id = "form" action="https://www.freecodecamp.com/email-submit)"> 
+      <h3>Join our mailing list</h3>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <input id = "submit" type="submit" value="Submit" action="/https://www.freecodecamp.com/email-submit">
+    </form>
 </body>
 </html>

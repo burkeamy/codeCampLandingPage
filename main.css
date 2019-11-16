@@ -1,3 +1,7 @@
+body {
+    padding-left: 1%;
+}
+
 /*header section styles*/
 #header-img {
     float: left;
@@ -15,6 +19,7 @@
 
 header {
     background-color: yellow;
+    z-index: 1;
 }
 
 .navbar-nav {
@@ -22,7 +27,19 @@ header {
     width: 100%;
     padding-left: 4em;
     margin-bottom: 4em;
+    color: purple;
 }
+
+a:hover {
+    background-color: purple;
+    color: yellow;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 /*image section*/
 
@@ -30,6 +47,7 @@ header {
     display: flex;
     height: 500px;
     padding-bottom: 8%;
+    margin-top: 2%;
 }
 
 .travel-image {
@@ -39,4 +57,16 @@ header {
 .img-rotate {
     transform: rotate(90deg);
     width: 200px;
+}
+
+/*form section*/
+form {
+    margin: 50px;
+    background-color: lavender;
+    width: 75%;
+    padding: 20px;
+}
+
+#submit:hover {
+    background-color: yellow;
 }
